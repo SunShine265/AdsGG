@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <!--<TextView-->
+        <!--android:id="@+id/game_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Game"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:layout_marginTop="50dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/timer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/retry_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:text="Retry" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/show_video_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="Watch Video" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/coin_count_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:text="Coin Count"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+</LinearLayout>
