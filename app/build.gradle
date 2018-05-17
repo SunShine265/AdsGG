@@ -1,23 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        debug {
-            keyAlias 'com.goodproductssoft'
-            keyPassword 'goodproductssoft'
-            storeFile file('C:/Users/user/Downloads/goodproductssoft.jks')
-            storePassword 'goodproductssoft'
-        }
-    }
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.goodproductssoft.tygia"
-        minSdkVersion 15
+        applicationId "com.goodproductssoft.minningpool"
+        minSdkVersion 16
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.2"
+        versionCode 53
+        versionName "1.53"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // Enabling multidex support.
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -27,13 +22,36 @@ android {
     }
 }
 
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.google.android.gms:play-services-ads:12.0.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.+'
+    compile 'com.google.android.gms:play-services-ads:15.0.1'
+    compile 'com.android.billingclient:billing:1.1'
+    compile 'com.squareup.retrofit2:retrofit:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+
+
+    compile('com.mopub:mopub-sdk:4.20.0@aar') {
+        transitive = true
+    }
+    compile 'com.google.ads.mediation:mopub:4.20.0.0'
+
+
+//    compile 'com.facebook.android:audience-network-sdk:4.27.1'
+//    compile 'com.google.ads.mediation:facebook:4.27.1.0'
+
+    compile 'com.applovin:applovin-sdk:8.0.0'
+    compile 'com.google.ads.mediation:applovin:8.0.0.0'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.8.2'
     testCompile 'junit:junit:4.12'
 }
